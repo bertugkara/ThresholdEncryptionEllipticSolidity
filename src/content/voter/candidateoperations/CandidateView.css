@@ -1,0 +1,16 @@
+.candidate-image {
+    transition: border-color 0.3s;
+    border-radius: 30px;
+}
+
+.candidate-image:hover {
+    border: 2px solid blue;
+    border-radius: 30px;
+    transition-duration: 0.1s; /* Shorter hover transition duration */
+}
+
+.candidate-image.clicked {
+    border: 2px solid blue;
+    border-radius: 30px;
+    transition-duration: 0.5s; /* Longer hover transition duration */
+}
