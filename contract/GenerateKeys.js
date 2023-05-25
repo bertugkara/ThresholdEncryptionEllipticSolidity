@@ -9,7 +9,7 @@ console.log(keyPair.priv.toString('hex'));
 
 let privateKey = keyPair.priv.toBuffer();
 // Split the private key into 5 shares with a threshold of 3
-const shares = threshold.split(privateKey, { shares: 5, threshold: 3 })
+const shares = threshold.split(privateKey, {shares: 5, threshold: 3})
 console.log('Shares:')
 shares.forEach((share, i) => console.log(`Share ${i + 1}:`, share.toString('hex')))
 
